@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".lifecycle.LifecycleActivity">
 
+    <TextView
+        android:id="@+id/tvContent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
