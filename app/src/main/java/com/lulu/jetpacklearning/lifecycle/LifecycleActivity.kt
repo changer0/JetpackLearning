@@ -9,6 +9,6 @@ class LifecycleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life_cycle)
-        lifecycle.addObserver(LifecycleTestClazz(tvContent))
+        lifecycle.addObserver(LifecycleActivityObserver(tvContent))
     }
 }

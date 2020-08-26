@@ -11,7 +11,7 @@ import androidx.lifecycle.OnLifecycleEvent
  * for 一个 lifecycle 的观察者
  */
 private const val TAG = "LifecycleTestClazz"
-class LifecycleTestClazz(val tvContent: TextView): LifecycleObserver {
+class LifecycleActivityObserver(val tvContent: TextView): LifecycleObserver {
     val loggerStr = StringBuilder()
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     fun onActivityCreate() {
