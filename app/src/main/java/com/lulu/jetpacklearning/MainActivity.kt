@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lulu.jetpacklearning.lifecycle.LifecycleActivity
+import com.lulu.jetpacklearning.livedata.LiveDataActivity
 import com.lulu.jetpacklearning.viewmodel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         }
         goViewModelActivity.setOnClickListener {
             startActivity(Intent(this, ViewModelActivity::class.java))
+        }
+        goLiveDataActivity.setOnClickListener {
+            startActivity(Intent(this, LiveDataActivity::class.java))
         }
     }
 }
